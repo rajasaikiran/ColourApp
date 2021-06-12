@@ -1,0 +1,25 @@
+<div class="form-group jumbotron container">
+  <p class="text-center display-4">Color App</p>
+  <label for="c">Enter Color:</label>
+  <input type="text" id="c" name="data" placeholder="display colors" class="form-control" #val>
+  <br>
+  <button class="btn btn-success"  (click)="addColor(val)">Add Color</button> 
+
+  
+  
+  <br>
+  <br>
+  <br>
+
+
+  <h6>Display Entered Colors:</h6>
+   <ol  >
+    <li *ngFor= "let Color of Colors">{{Color}} </li>
+
+    
+  </ol>
+
+</div>
+
+
+<div>
